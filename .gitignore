@@ -1,4 +1,3 @@
-# Unity generated files
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -77,9 +76,3 @@ crashlytics-build.properties
 # MacOS
 .DS_Store
 **/.DS_Store
-
-# PlayFab SDK
-/[Aa]ssets/PlayFab*
-
-# PlayFabEditorExtensions
-/[Aa]ssets/PlayFabEditorExtensions*
