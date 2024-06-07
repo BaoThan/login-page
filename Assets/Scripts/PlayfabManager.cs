@@ -4,13 +4,15 @@ using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 
-public class PlayfabManager : MonoBehaviour
+
+public class Playfabmanager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
         Login();
     }
+
     void Login() {
         var request = new LoginWithCustomIDRequest {
             CustomId = SystemInfo.deviceUniqueIdentifier,
@@ -20,11 +22,10 @@ public class PlayfabManager : MonoBehaviour
     }
 
     void OnSuccess(LoginResult result) {
-        Debug.Log("Successful login/account create!");
+        Debug.Log("Successful login");
     }
-
     void OnError(PlayFabError error) {
-        Debug.Log("Error while loggin in/creating account!");
+        Debug.Log("Error while loggin");
         Debug.Log(error.GenerateErrorReport());
     }
 }
