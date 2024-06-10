@@ -8,7 +8,9 @@ public class InputFieldNav : MonoBehaviour
 {
     EventSystem system;
     public Selectable firstInput;
-    // Start is called before the first frame update
+    public Button submitButton;
+    public Button loginButton;
+    public Button registerButton;
     void Start()
     {
         system = EventSystem.current;
@@ -28,6 +30,9 @@ public class InputFieldNav : MonoBehaviour
             if (next != null) {
                 next.Select();
             }
+        } else if (Input.GetKeyDown(KeyCode.Return)) {
+            submitButton.onClick.Invoke();
+            Debug.Log("Button pressed!");
         }
     }
 }
