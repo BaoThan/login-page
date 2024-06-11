@@ -14,6 +14,7 @@ public class Playfabmanager : MonoBehaviour {
     public Text messageText;
     public InputField emailInput;
     public InputField passwordInput;
+    public Button submitButton;
 
     public void SubmitButton() {
         var request = new RegisterPlayFabUserRequest {
@@ -31,6 +32,7 @@ public class Playfabmanager : MonoBehaviour {
 
     void Start()
     {
+        submitButton.onClick.AddListener(SubmitButton);
         Login();
     }
 
