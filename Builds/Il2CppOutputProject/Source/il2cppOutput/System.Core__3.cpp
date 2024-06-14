@@ -1150,6 +1150,9 @@ struct StrongBox_1_t192FDA778C70E71E79A6171CC20E1B12688D93C2  : public RuntimeOb
 {
 	RuntimeObject* ___Value;
 };
+struct U3CPrivateImplementationDetailsU3E_t0985298E3928118182D9E60D8C7A51F84FE0D710  : public RuntimeObject
+{
+};
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235  : public RuntimeObject
 {
 };
@@ -1810,6 +1813,51 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
 };
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE__padding[1024];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D120_t6F11AA913DFF35D8B33057BABEFEF1EA9B976881 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D120_t6F11AA913DFF35D8B33057BABEFEF1EA9B976881__padding[120];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D256_t121506E42A9F4B673CDCF2FDFF169D68811BB731 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D256_t121506E42A9F4B673CDCF2FDFF169D68811BB731__padding[256];
+	};
+};
+#pragma pack(pop, tp)
 struct QuoteVisitor_tAF65D5FC6B193B07A3D795C928F4E02DA518529F  : public ExpressionVisitor_tD26583FF464068F23017BC372C81133A62C5A590
 {
 	Dictionary_2_tBB429CD29D6F765D173E93E0F638CBF47BCE9A69* ____definedParameters;
@@ -2593,6 +2641,20 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 struct List_1_tB4C51EDF952DFE5B85A78E600B2A730FDF6996C8_StaticFields
 {
 	VariableScopeU5BU5D_tECA769E233A4C5B3BA0DA261AD8ECD05AA16D37F* ___s_emptyArray;
+};
+struct U3CPrivateImplementationDetailsU3E_t0985298E3928118182D9E60D8C7A51F84FE0D710_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___0270BFF41CB170C33C20788C368CB1B5A66B0FD0B98D638A827B783537583821;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___09FDC69AA887AC8D36E0C8284C7B1D53E580E4880B72A67FF80D7E38317115D9;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___0F4764044BF2E91EFEFAF3D4F1E81C10A2B7F0F45305489925CFC01198CF45B5;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___15A0E7628178B3FE6546E9B60F35E2B1C4864E020B16376866F38F72C74B45A9;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___4CF8DC711CD3210D673D86981355E2609233025ED22E4DC7A1F9B8E75ADE35F4;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___783FB0A44BE7670EB6EC170CF7F16BB2B6F23F4964B87B60C4EB506C7C6A286D;
+	__StaticArrayInitTypeSizeU3D120_t6F11AA913DFF35D8B33057BABEFEF1EA9B976881 ___914FCE8DC82DA59038745B264F743222527FBAE2E4A28E71C89760B7E3DBBA67;
+	__StaticArrayInitTypeSizeU3D256_t121506E42A9F4B673CDCF2FDFF169D68811BB731 ___93631B0726F6FE6629DAA743EE51B49F4477ED07391B68EEEA0672A4A90018AA;
+	__StaticArrayInitTypeSizeU3D256_t121506E42A9F4B673CDCF2FDFF169D68811BB731 ___C2D8E5EED6CBEBD8625FC18F81486A7733C04F9B0129FFBE974C68B90308B4F2;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___C40A9A77EE05E10AF16DA9D1781A2053159EA8570ADA03637BB5FE3D076C9F89;
+	__StaticArrayInitTypeSizeU3D1024_t2A1518FE93EF6BEE22F2C6BA90AE95237A6E13AE ___E8058399671D13082C35B6B3CE7F9E282507EDD458CCFDD3BAD9F35D90016F62;
 };
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
 {
@@ -25185,7 +25247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TypeIsInstruction_Run_m138A8BBD756392
 		L_3 = InterpretedFrame_Pop_mB08F9A4193FC9EEDFA06CF1D1950A4D6FDE035A3(L_2, NULL);
 		NullCheck(L_1);
 		bool L_4;
-		L_4 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113, L_1, L_3);
+		L_4 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(117, L_1, L_3);
 		NullCheck(L_0);
 		InterpretedFrame_Push_mE3F348D8327A9AC2B555DC21DFB26F4F0F9C314C(L_0, L_4, NULL);
 		return 1;
@@ -25269,7 +25331,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TypeAsInstruction_Run_mE84524B8B90BD0
 		RuntimeObject* L_4 = V_0;
 		NullCheck(L_3);
 		bool L_5;
-		L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(117, L_3, L_4);
 		if (L_5)
 		{
 			G_B2_0 = L_2;
@@ -27905,7 +27967,7 @@ IL_00b9:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_23 = ___0_types;
 		NullCheck(L_22);
 		Type_t* L_24;
-		L_24 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_22, L_23);
+		L_24 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_22, L_23);
 		return L_24;
 	}
 
@@ -27918,7 +27980,7 @@ IL_00ca:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_27 = ___0_types;
 		NullCheck(L_26);
 		Type_t* L_28;
-		L_28 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_26, L_27);
+		L_28 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_26, L_27);
 		return L_28;
 	}
 
@@ -27931,7 +27993,7 @@ IL_00db:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_31 = ___0_types;
 		NullCheck(L_30);
 		Type_t* L_32;
-		L_32 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_30, L_31);
+		L_32 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_30, L_31);
 		return L_32;
 	}
 
@@ -27944,7 +28006,7 @@ IL_00ec:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_35 = ___0_types;
 		NullCheck(L_34);
 		Type_t* L_36;
-		L_36 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_34, L_35);
+		L_36 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_34, L_35);
 		return L_36;
 	}
 
@@ -27957,7 +28019,7 @@ IL_00fd:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_39 = ___0_types;
 		NullCheck(L_38);
 		Type_t* L_40;
-		L_40 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_38, L_39);
+		L_40 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_38, L_39);
 		return L_40;
 	}
 
@@ -27970,7 +28032,7 @@ IL_010e:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_43 = ___0_types;
 		NullCheck(L_42);
 		Type_t* L_44;
-		L_44 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_42, L_43);
+		L_44 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_42, L_43);
 		return L_44;
 	}
 
@@ -27983,7 +28045,7 @@ IL_011f:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_47 = ___0_types;
 		NullCheck(L_46);
 		Type_t* L_48;
-		L_48 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_46, L_47);
+		L_48 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_46, L_47);
 		return L_48;
 	}
 
@@ -27996,7 +28058,7 @@ IL_0130:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_51 = ___0_types;
 		NullCheck(L_50);
 		Type_t* L_52;
-		L_52 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_50, L_51);
+		L_52 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_50, L_51);
 		return L_52;
 	}
 
@@ -28009,7 +28071,7 @@ IL_0141:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_55 = ___0_types;
 		NullCheck(L_54);
 		Type_t* L_56;
-		L_56 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_54, L_55);
+		L_56 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_54, L_55);
 		return L_56;
 	}
 
@@ -28022,7 +28084,7 @@ IL_0152:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_59 = ___0_types;
 		NullCheck(L_58);
 		Type_t* L_60;
-		L_60 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_58, L_59);
+		L_60 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_58, L_59);
 		return L_60;
 	}
 
@@ -28035,7 +28097,7 @@ IL_0163:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_63 = ___0_types;
 		NullCheck(L_62);
 		Type_t* L_64;
-		L_64 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_62, L_63);
+		L_64 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_62, L_63);
 		return L_64;
 	}
 
@@ -28048,7 +28110,7 @@ IL_0174:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_67 = ___0_types;
 		NullCheck(L_66);
 		Type_t* L_68;
-		L_68 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_66, L_67);
+		L_68 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_66, L_67);
 		return L_68;
 	}
 
@@ -28061,7 +28123,7 @@ IL_0185:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_71 = ___0_types;
 		NullCheck(L_70);
 		Type_t* L_72;
-		L_72 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_70, L_71);
+		L_72 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_70, L_71);
 		return L_72;
 	}
 
@@ -28074,7 +28136,7 @@ IL_0196:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_75 = ___0_types;
 		NullCheck(L_74);
 		Type_t* L_76;
-		L_76 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_74, L_75);
+		L_76 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_74, L_75);
 		return L_76;
 	}
 
@@ -28087,7 +28149,7 @@ IL_01a7:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_79 = ___0_types;
 		NullCheck(L_78);
 		Type_t* L_80;
-		L_80 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_78, L_79);
+		L_80 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_78, L_79);
 		return L_80;
 	}
 
@@ -28100,7 +28162,7 @@ IL_01b8:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_83 = ___0_types;
 		NullCheck(L_82);
 		Type_t* L_84;
-		L_84 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_82, L_83);
+		L_84 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_82, L_83);
 		return L_84;
 	}
 
@@ -28195,7 +28257,7 @@ IL_021e:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_89 = ___0_types;
 		NullCheck(L_88);
 		Type_t* L_90;
-		L_90 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_88, L_89);
+		L_90 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_88, L_89);
 		return L_90;
 	}
 
@@ -28208,7 +28270,7 @@ IL_022f:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_93 = ___0_types;
 		NullCheck(L_92);
 		Type_t* L_94;
-		L_94 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_92, L_93);
+		L_94 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_92, L_93);
 		return L_94;
 	}
 
@@ -28221,7 +28283,7 @@ IL_0240:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_97 = ___0_types;
 		NullCheck(L_96);
 		Type_t* L_98;
-		L_98 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_96, L_97);
+		L_98 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_96, L_97);
 		return L_98;
 	}
 
@@ -28234,7 +28296,7 @@ IL_0251:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_101 = ___0_types;
 		NullCheck(L_100);
 		Type_t* L_102;
-		L_102 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_100, L_101);
+		L_102 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_100, L_101);
 		return L_102;
 	}
 
@@ -28247,7 +28309,7 @@ IL_0262:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_105 = ___0_types;
 		NullCheck(L_104);
 		Type_t* L_106;
-		L_106 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_104, L_105);
+		L_106 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_104, L_105);
 		return L_106;
 	}
 
@@ -28260,7 +28322,7 @@ IL_0273:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_109 = ___0_types;
 		NullCheck(L_108);
 		Type_t* L_110;
-		L_110 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_108, L_109);
+		L_110 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_108, L_109);
 		return L_110;
 	}
 
@@ -28273,7 +28335,7 @@ IL_0284:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_113 = ___0_types;
 		NullCheck(L_112);
 		Type_t* L_114;
-		L_114 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_112, L_113);
+		L_114 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_112, L_113);
 		return L_114;
 	}
 
@@ -28286,7 +28348,7 @@ IL_0295:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_117 = ___0_types;
 		NullCheck(L_116);
 		Type_t* L_118;
-		L_118 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_116, L_117);
+		L_118 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_116, L_117);
 		return L_118;
 	}
 
@@ -28299,7 +28361,7 @@ IL_02a6:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_121 = ___0_types;
 		NullCheck(L_120);
 		Type_t* L_122;
-		L_122 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_120, L_121);
+		L_122 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_120, L_121);
 		return L_122;
 	}
 
@@ -28312,7 +28374,7 @@ IL_02b7:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_125 = ___0_types;
 		NullCheck(L_124);
 		Type_t* L_126;
-		L_126 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_124, L_125);
+		L_126 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_124, L_125);
 		return L_126;
 	}
 
@@ -28325,7 +28387,7 @@ IL_02c8:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_129 = ___0_types;
 		NullCheck(L_128);
 		Type_t* L_130;
-		L_130 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_128, L_129);
+		L_130 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_128, L_129);
 		return L_130;
 	}
 
@@ -28338,7 +28400,7 @@ IL_02d9:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_133 = ___0_types;
 		NullCheck(L_132);
 		Type_t* L_134;
-		L_134 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_132, L_133);
+		L_134 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_132, L_133);
 		return L_134;
 	}
 
@@ -28351,7 +28413,7 @@ IL_02ea:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_137 = ___0_types;
 		NullCheck(L_136);
 		Type_t* L_138;
-		L_138 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_136, L_137);
+		L_138 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_136, L_137);
 		return L_138;
 	}
 
@@ -28364,7 +28426,7 @@ IL_02fb:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_141 = ___0_types;
 		NullCheck(L_140);
 		Type_t* L_142;
-		L_142 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_140, L_141);
+		L_142 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_140, L_141);
 		return L_142;
 	}
 
@@ -28377,7 +28439,7 @@ IL_030c:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_145 = ___0_types;
 		NullCheck(L_144);
 		Type_t* L_146;
-		L_146 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_144, L_145);
+		L_146 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_144, L_145);
 		return L_146;
 	}
 
@@ -28390,7 +28452,7 @@ IL_031d:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_149 = ___0_types;
 		NullCheck(L_148);
 		Type_t* L_150;
-		L_150 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_148, L_149);
+		L_150 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_148, L_149);
 		return L_150;
 	}
 
@@ -28403,7 +28465,7 @@ IL_032e:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_153 = ___0_types;
 		NullCheck(L_152);
 		Type_t* L_154;
-		L_154 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_152, L_153);
+		L_154 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_152, L_153);
 		return L_154;
 	}
 
@@ -29586,7 +29648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ExpressionUtils_TryQuote_m2569827EBCA282
 		Expression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785* L_6 = *((Expression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785**)L_5);
 		NullCheck(L_4);
 		bool L_7;
-		L_7 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113, L_4, L_6);
+		L_7 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(117, L_4, L_6);
 		if (!L_7)
 		{
 			goto IL_0027;
@@ -30541,7 +30603,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* TypeUtils_GetNullableType_m46BA587AC3
 		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t*)L_8);
 		NullCheck(L_5);
 		Type_t* L_9;
-		L_9 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120, L_5, L_7);
+		L_9 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(124, L_5, L_7);
 		return L_9;
 	}
 
@@ -31087,7 +31149,7 @@ IL_006c:
 		L_26 = IntrospectionExtensions_GetTypeInfo_mF4497C8656153A91554F7DC469CE223AF2784FF5(L_25, NULL);
 		NullCheck(L_26);
 		RuntimeObject* L_27;
-		L_27 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(128, L_26);
+		L_27 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(132, L_26);
 		NullCheck(L_27);
 		RuntimeObject* L_28;
 		L_28 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_t6686595E4CB7AC210F0EF075F7B1DD4A21D3902B_il2cpp_TypeInfo_var, L_27);
@@ -31310,7 +31372,7 @@ IL_003b:
 		Type_t* L_26 = ___0_source;
 		NullCheck(L_26);
 		Type_t* L_27;
-		L_27 = VirtualFuncInvoker0< Type_t* >::Invoke(115, L_26);
+		L_27 = VirtualFuncInvoker0< Type_t* >::Invoke(119, L_26);
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_28 = { reinterpret_cast<intptr_t> (Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		Type_t* L_29;
@@ -32726,7 +32788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* TypeUtils_GetUserDefinedCoercio
 		Type_t* L_4 = V_0;
 		NullCheck(L_4);
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_5;
-		L_5 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(97, L_4, ((int32_t)56));
+		L_5 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(101, L_4, ((int32_t)56));
 		V_2 = L_5;
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_6 = V_2;
 		Type_t* L_7 = ___0_convertFrom;
@@ -32752,7 +32814,7 @@ IL_002b:
 		Type_t* L_13 = V_1;
 		NullCheck(L_13);
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_14;
-		L_14 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(97, L_13, ((int32_t)56));
+		L_14 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(101, L_13, ((int32_t)56));
 		V_4 = L_14;
 		MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_15 = V_4;
 		Type_t* L_16 = ___0_convertFrom;
@@ -33439,7 +33501,7 @@ IL_001a:
 		L_10 = IntrospectionExtensions_GetTypeInfo_mF4497C8656153A91554F7DC469CE223AF2784FF5(L_9, NULL);
 		NullCheck(L_10);
 		RuntimeObject* L_11;
-		L_11 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(128, L_10);
+		L_11 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(132, L_10);
 		NullCheck(L_11);
 		RuntimeObject* L_12;
 		L_12 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_t6686595E4CB7AC210F0EF075F7B1DD4A21D3902B_il2cpp_TypeInfo_var, L_11);
@@ -33530,7 +33592,7 @@ IL_0065:
 		Type_t* L_25 = ___1_type;
 		NullCheck(L_25);
 		Type_t* L_26;
-		L_26 = VirtualFuncInvoker0< Type_t* >::Invoke(110, L_25);
+		L_26 = VirtualFuncInvoker0< Type_t* >::Invoke(114, L_25);
 		___1_type = L_26;
 	}
 
@@ -33631,7 +33693,7 @@ IL_002d:
 		Type_t* L_13 = ___0_type;
 		NullCheck(L_13);
 		Type_t* L_14;
-		L_14 = VirtualFuncInvoker0< Type_t* >::Invoke(110, L_13);
+		L_14 = VirtualFuncInvoker0< Type_t* >::Invoke(114, L_13);
 		___0_type = L_14;
 		Type_t* L_15 = ___0_type;
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
@@ -33695,7 +33757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TypeUtils_AreEquivalent_m0BABD4C82A94A96
 		Type_t* L_3 = ___1_t2;
 		NullCheck(L_2);
 		bool L_4;
-		L_4 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(114, L_2, L_3);
+		L_4 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(118, L_2, L_3);
 		return L_4;
 	}
 
@@ -34003,7 +34065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeUtils__cctor_mB36C11550B01FFEAF9FC7B
 		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
 		NullCheck(L_1);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_2;
-		L_2 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(112, L_1);
+		L_2 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(116, L_1);
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t5D488D45E7E9A7468509E0FA1FDFEE022913B16E_il2cpp_TypeInfo_var);
 		U3CU3Ec_t5D488D45E7E9A7468509E0FA1FDFEE022913B16E* L_3 = ((U3CU3Ec_t5D488D45E7E9A7468509E0FA1FDFEE022913B16E_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t5D488D45E7E9A7468509E0FA1FDFEE022913B16E_il2cpp_TypeInfo_var))->___U3CU3E9;
 		Func_2_t7AF8146EC94DFCBB0F1B3E70111C1FB21D39F00E* L_4 = (Func_2_t7AF8146EC94DFCBB0F1B3E70111C1FB21D39F00E*)il2cpp_codegen_object_new(Func_2_t7AF8146EC94DFCBB0F1B3E70111C1FB21D39F00E_il2cpp_TypeInfo_var);
@@ -34073,6 +34135,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* U3CU3Ec_U3C_cctorU3Eb__44_1_mEC47DD38
 		return L_1;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -365,7 +365,7 @@ enum JoystickButtonNumbers
     BTN_COUNT
 };
 
-typedef struct JoystickButtonState
+typedef struct
 {
     int buttonCode;
     bool state;

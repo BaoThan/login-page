@@ -33,6 +33,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Subsystems();
 	RegisterModule_Subsystems();
 
+	void RegisterModule_TLS();
+	RegisterModule_TLS();
+
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
 
@@ -47,6 +50,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_UIElements();
 	RegisterModule_UIElements();
+
+	void RegisterModule_UnityWebRequest();
+	RegisterModule_UnityWebRequest();
 
 }
 

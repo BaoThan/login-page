@@ -96,23 +96,23 @@
 
         if (granted)
         {
-            [self->_lock lock];
-            if (registerRemote && self->_remoteNotificationsRegistered == UNAuthorizationStatusNotDetermined)
+            [_lock lock];
+            if (registerRemote && _remoteNotificationsRegistered == UNAuthorizationStatusNotDetermined)
             {
                 authorizationRequestFinished = NO;
                 if (request)
                 {
-                    if (self->_pendingRemoteAuthRequests == nil)
-                        self->_pendingRemoteAuthRequests = [NSPointerArray pointerArrayWithOptions: NSPointerFunctionsOpaqueMemory];
-                    [self->_pendingRemoteAuthRequests addPointer: request];
+                    if (_pendingRemoteAuthRequests == nil)
+                        _pendingRemoteAuthRequests = [NSPointerArray pointerArrayWithOptions: NSPointerFunctionsOpaqueMemory];
+                    [_pendingRemoteAuthRequests addPointer: request];
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [[UIApplication sharedApplication] registerForRemoteNotifications];
                 });
             }
             else
-                authData.deviceToken = [self->_deviceToken UTF8String];
-            [self->_lock unlock];
+                authData.deviceToken = [_deviceToken UTF8String];
+            [_lock unlock];
         }
         else
             NSLog(@"Requesting notification authorization failed with: %@", error);
