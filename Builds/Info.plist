@@ -57,6 +57,8 @@
     </array>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <true />
+    <key>Unity_LoadingActivityIndicatorStyle</key>
+    <integer>-1</integer>
     <key>UnityAddRemoteNotificationCapability</key>
     <false />
     <key>UnityAddTimeSensitiveEntitlement</key>
@@ -73,7 +75,5 @@
     <false />
     <key>UnityUseLocationNotificationTrigger</key>
     <false />
-    <key>Unity_LoadingActivityIndicatorStyle</key>
-    <integer>-1</integer>
   </dict>
 </plist>

@@ -2304,7 +2304,10 @@ namespace PlayFab
             PlayFabHttp.MakeApiCall("/Client/WriteTitleEvent", request, AuthType.LoginSession, resultCallback, errorCallback, customData, extraHeaders, context, callSettings);
         }
 
-
+        public static bool LoginWithEmailAddress(LoginWithEmailAddressRequest loginWithEmailAddressRequest, Action<LoginResult> value, PlayFabError playFabError, object error)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
