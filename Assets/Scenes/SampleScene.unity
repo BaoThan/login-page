@@ -1700,6 +1700,7 @@ MonoBehaviour:
   userEmail: {fileID: 331640094}
   userPassword: {fileID: 1333852893}
   userConfirmPassword: {fileID: 1157210663}
+  userDisplayNameInputField: {fileID: 889622441}
   RememberMe: {fileID: 1458886225}
   loggedinPanel: {fileID: 1488216198}
   loginPanel: {fileID: 1532631965}
@@ -1716,7 +1717,7 @@ MonoBehaviour:
   resetSampleButton: {fileID: 1092355371}
   logoutButton: {fileID: 170588458}
   switchButtonText: {fileID: 976952196}
-  userName: {fileID: 1157489409}
+  displayNamePlaceholder: {fileID: 1157489409}
   userPlayFabID: {fileID: 752280749}
   statusMessage: {fileID: 351020450}
   InfoRequestParams:
@@ -2282,7 +2283,7 @@ GameObject:
   - component: {fileID: 889622442}
   - component: {fileID: 889622441}
   m_Layer: 5
-  m_Name: Player Name InputField
+  m_Name: User Display Name Inputfield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2865,7 +2866,7 @@ GameObject:
   - component: {fileID: 1157489410}
   - component: {fileID: 1157489409}
   m_Layer: 5
-  m_Name: Use Name Placeholder
+  m_Name: User Name Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3913,6 +3914,7 @@ GameObject:
   - component: {fileID: 1488216202}
   - component: {fileID: 1488216201}
   - component: {fileID: 1488216200}
+  - component: {fileID: 1488216203}
   m_Layer: 5
   m_Name: Logged In Panel
   m_TagString: Untagged
@@ -4007,6 +4009,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488216198}
   m_CullTransparentMesh: 0
+--- !u!114 &1488216203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488216198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120568dae94749d488c6c5b480d6b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusMessage: {fileID: 351020450}
+  changeDisplayNameButton: {fileID: 1239898708}
+  playerDisplayName: {fileID: 889622441}
 --- !u!1 &1521034610
 GameObject:
   m_ObjectHideFlags: 0
