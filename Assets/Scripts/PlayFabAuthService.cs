@@ -2,7 +2,6 @@ using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 using System;
-using System.Collections.Generic;
 
 public enum AuthTypes
 {
@@ -23,7 +22,6 @@ public class PlayFabAuthService
     public string Username { get; set; }
     public string Password { get; set; }
     public GetPlayerCombinedInfoRequestParams InfoRequestParams { get; set; }
-    // public List<LinkedPlatformAccountModel> LinkedAccounts { get; set; }
 
     public bool ForceLink { get; set; } = false;
 
@@ -92,7 +90,7 @@ public class PlayFabAuthService
                 break;
 
             case AuthTypes.SignUp:
-                AddAccountAndPassword();
+                SignUpProgress();
                 break;
         }
     }
@@ -157,13 +155,15 @@ public class PlayFabAuthService
                 }
                 OnLoginSuccess?.Invoke(result);
             },
-            error => OnPlayFabError?.Invoke(error));
+            error =>
+            {
+                OnPlayFabError?.Invoke(error);
+                Debug.LogError(error.GenerateErrorReport());
+            });
     }
 
-    private void AddAccountAndPassword()
+    private void SignUpProgress()
     {
-        // Any time we attempt to register a player, first silently authenticate the player.
-        // This will retain the players True Origination (Android, iOS, Desktop)
         SilentlyAuthenticate(
             result =>
             {
@@ -174,48 +174,104 @@ public class PlayFabAuthService
                         Error = PlayFabErrorCode.UnknownError,
                         ErrorMessage = "Silent Authentication by Device failed"
                     });
+                    return;
                 }
 
-                PlayFabClientAPI.AddUsernamePassword(
-                    new AddUsernamePasswordRequest()
+                UserNameExists(result.PlayFabId, exists =>
+                {
+                    if (exists)
                     {
-                        // Because it is required & Unique and not supplied by User.
-                        Username = Username ?? result.PlayFabId,
-                        Email = Email,
-                        Password = Password,
-                    },
-
-                    (AddUsernamePasswordResult addResult) =>
+                        CreateAccount();
+                    }
+                    else
                     {
-                        if (OnLoginSuccess != null)
-                        {
-                            _playFabId = result.PlayFabId;
-                            _sessionTicket = result.SessionTicket;
-
-                            if (RememberMe)
-                            {
-                                RememberMeId = Guid.NewGuid().ToString();
-
-                                PlayFabClientAPI.LinkCustomID(
-                                    new LinkCustomIDRequest()
-                                    {
-                                        CustomId = RememberMeId,
-                                        ForceLink = ForceLink
-                                    }, null, null
-                                );
-                            }
-                            AuthType = AuthTypes.EmailAndPassword;
-                            OnLoginSuccess.Invoke(result);
-                        }
-                    },
-
-                    error =>
-                    {
-                        OnPlayFabError?.Invoke(error);
-                        AuthType = AuthTypes.None;
-                    });
+                        AddAccountAndPassword(result);
+                    }
+                });
             });
     }
+    private void AddAccountAndPassword(LoginResult result)
+    {
+        PlayFabClientAPI.AddUsernamePassword(
+            new AddUsernamePasswordRequest()
+            {
+                // Because it is required & Unique and not supplied by User.
+                Username = Username ?? result.PlayFabId,
+                Email = Email,
+                Password = Password,
+            },
+
+            addResult =>
+            {
+                if (OnLoginSuccess != null)
+                {
+                    _playFabId = result.PlayFabId;
+                    _sessionTicket = result.SessionTicket;
+
+                    if (RememberMe)
+                    {
+                        RememberMeId = Guid.NewGuid().ToString();
+
+                        PlayFabClientAPI.LinkCustomID(
+                            new LinkCustomIDRequest()
+                            {
+                                CustomId = RememberMeId,
+                                ForceLink = ForceLink
+                            }, null, null
+                        );
+                    }
+                    AuthType = AuthTypes.EmailAndPassword;
+                    OnLoginSuccess.Invoke(result);
+                }
+            },
+
+            error =>
+            {
+                OnPlayFabError?.Invoke(error);
+                AuthType = AuthTypes.None;
+            });
+
+    }
+
+    private void UserNameExists(string username, Action<bool> callback)
+    {
+        PlayFabClientAPI.GetAccountInfo(new GetAccountInfoRequest()
+        {
+            Username = username
+        },
+        result => callback?.Invoke(true),
+        error => callback?.Invoke(false));
+    }
+
+    private void CreateAccount()
+    {
+        PlayFabClientAPI.RegisterPlayFabUser(new RegisterPlayFabUserRequest()
+        {
+            Email = Email,
+            Password = Password,
+            RequireBothUsernameAndEmail = false
+        },
+        OnSuccess =>
+        {
+            Debug.Log("Account created successfully!");
+            AuthenticateEmailPassword();
+        },
+        OnError => Debug.LogError("Error creating account: " + OnError.GenerateErrorReport())
+        );
+    }
+
+    public void SendRecoveryEmail(Action<string> onSuccess, Action<string> onError)
+    {
+        PlayFabClientAPI.SendAccountRecoveryEmail(new SendAccountRecoveryEmailRequest()
+        {
+            Email = Email,
+            TitleId = PlayFabSettings.TitleId,
+        },
+        success => onSuccess?.Invoke("Recovery email sent successfully."),
+        error => onError?.Invoke($"Error sending recovery email: {error.GenerateErrorReport()}")
+        );
+    }
+
 
     private void SilentlyAuthenticate(System.Action<LoginResult> callback = null)
     {

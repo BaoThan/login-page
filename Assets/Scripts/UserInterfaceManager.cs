@@ -15,10 +15,12 @@ public class UserInterfaceManager : MonoBehaviour
     public InputField userPassword;
     public InputField userConfirmPassword;
     public InputField userDisplayNameInputField;
+    public InputField recoveryEmail;
     public Toggle RememberMe;
 
     public GameObject loggedinPanel;
     public GameObject loginPanel;
+    public GameObject recoveryPasswordPanel;
     public GameObject loginButtonGameObject;
     public GameObject signupModeGameObject;
 
@@ -32,6 +34,8 @@ public class UserInterfaceManager : MonoBehaviour
     public Button clearSigninButton;
     public Button resetSampleButton;
     public Button logoutButton;
+    public Button backButton;
+    public Button submitRecoveryButton;
 
     public Text switchButtonText;
     public Text displayNamePlaceholder;
@@ -78,6 +82,8 @@ public class UserInterfaceManager : MonoBehaviour
         resetSampleButton.onClick.AddListener(OnResetSampleButtonClicked);
         logoutButton.onClick.AddListener(OnLogoutButtonClicked);
         switchButtonText = switchButton.GetComponentInChildren<Text>();
+        submitRecoveryButton.onClick.AddListener(OnSubmitRecoveryClicked);
+        backButton.onClick.AddListener(OnResetPasswordButtonClicked);
 
         PlayFabAuthService.OnDisplayAuthentication += OnDisplayAuthentication;
         PlayFabAuthService.OnLoginSuccess += OnLoginSuccess;
@@ -122,8 +128,29 @@ public class UserInterfaceManager : MonoBehaviour
 
     private void OnResetPasswordButtonClicked()
     {
-        throw new NotImplementedException();
+        if (!string.IsNullOrEmpty(userEmail.text))
+        {
+            recoveryEmail.text = userEmail.text;
+        }
+        recoveryPasswordPanel.SetActive(!recoveryPasswordPanel.activeSelf);
     }
+
+    private void OnSubmitRecoveryClicked()
+    {
+        string validationMessage = ValidateInput(recoveryEmail.text, null, null);
+        if (!string.IsNullOrEmpty(validationMessage))
+        {
+            statusMessage.text = validationMessage;
+            return;
+        }
+
+        _AuthService.Email = recoveryEmail.text;
+        _AuthService.SendRecoveryEmail(
+            successMessage => statusMessage.text = successMessage,
+            errorMessage => statusMessage.text = errorMessage
+        );
+    }
+
 
     private void OnAppleLoginButtonClicked()
     {
@@ -214,6 +241,7 @@ public class UserInterfaceManager : MonoBehaviour
                 statusMessage.text = "Invalid Email or Password";
                 break;
             case PlayFabErrorCode.AccountNotFound:
+                statusMessage.text = "Email not found. Please check or create a new account.";
                 loginButtonGameObject.SetActive(false);
                 signupModeGameObject.SetActive(true);
                 switchButtonText.text = "Login";
@@ -255,7 +283,7 @@ public class UserInterfaceManager : MonoBehaviour
             return "Invalid email address.";
         }
 
-        if (string.IsNullOrEmpty(password))
+        if (password != null && string.IsNullOrEmpty(password))
         {
             return "Password is required.";
         }

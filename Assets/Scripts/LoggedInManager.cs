@@ -7,11 +7,16 @@ public class LoggedInManager : MonoBehaviour
 {
     public Text statusMessage;
     public Button changeDisplayNameButton;
+    public Button linkDeviceButton;
+    public Button unlinkDeviceButton;
     public InputField playerDisplayName;
+
+    private PlayFabAuthService _AuthService = PlayFabAuthService.Instance;
 
     void Start()
     {
         changeDisplayNameButton.onClick.AddListener(OnChangeDisplayNameClicked);
+        unlinkDeviceButton.onClick.AddListener(OnUnlinkButtonClicked);
     }
 
     private void OnChangeDisplayNameClicked()
@@ -39,5 +44,10 @@ public class LoggedInManager : MonoBehaviour
                 Debug.LogError("Error updating display name: " + error.GenerateErrorReport());
             }
         );
+    }
+
+    private void OnUnlinkButtonClicked()
+    {
+        _AuthService.UnlinkDeviceID();
     }
 }
